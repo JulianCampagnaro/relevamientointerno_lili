@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relevamiento de información</title>
+  <link rel="shortcut icon" href="../recursos/configuracion.png">
+  <link href =" https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap " rel ="stylesheet" >
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body class="contenedor">
+  <header class="menu">
+      <!-- Meto el logo de Lili -->
+      <div class="menu__figura">
+        <a href="https://www.liliana.com.ar/"><img src="../recursos/liliana.png" id="lili" height="50px" width="155px" alt="Logo de Liliana"/></a>
+      </div>    
+      <!-- Dejo el mismo header para todas las páginas -->
+      <nav class="menu__navegador">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="pag_sec.html">Auditoría Interna</a></li>
+          <li><a href="login.html">Inicio de sesión</a></li>
+          <li><a href="productos.html">Nuestros productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main class="main__forms">
+      <form class="forg" action="submeter-formulario.php" method="post">
+        <h1 class="forg__titulo">Relevamiento</h1>
+        <section class="forg__desc">
+          <p>Los campos obligatorios contienen <strong><abbr title="required">*</abbr></strong></p>
+          <fieldset class="forg__desc__select">
+            <legend>Motivo<strong><abbr title="required">*</abbr></strong></legend>
+            <ul class="forg__desc__select__motivos">
+                  <div>
+                    <label for="mot1">
+                      <input type="radio" id="mot1" name="title" value="K">
+                      Reproceso
+                    </label>
+                    <label for="mot2">
+                      <input type="radio" id="mot2" name="title" value="N">
+                      Incompleto
+                    </label>
+                  </div>
+                  <div>
+                    <label for="mot3">
+                      <input type="radio" id="mot3" name="title" value="Q">
+                      Defecto superficial
+                    </label>
+                    <label for="mot4">
+                      <input type="radio" id="mot4" name="title" value="S">
+                      Otros
+                    </label>
+                  </div>
+                  <div>
+                    <label for="mot5">
+                      <input type="radio" id="mot5" name="title" value="J">
+                      Funcionamiento
+                    </label>
+                  </div>
+                  <div>
+                    <label for="mot6">
+                      <input type="radio" id="mot6" name="title" value="L">
+                      Faltante de pz plástica
+                    </label>
+                  </div>
+                  <div></div>
+                    <label for="mot7">
+                      <input type="radio" id="mot7" name="title" value="M">
+                      Ausentismo
+                    </label>
+                  </div>
+            </ul>
+          </fieldset>
+          <div class="forg__desplegablesector">
+              <label for="select1">Sector</label>
+              <select class="forg__desplegablesector__select" >
+                <option disabled selected=""">Seleccione sector</option>"
+                <option>Armado 1</option>
+                <option>Armado 2</option>
+                <option>Armado 3</option>
+                <option>Armado 4</option>
+              </select>
+          </div>
+          <div class="forg__desplegablelider">
+              <label for="select2">Líder<strong><abbr title="required">*</abbr></strong></label>
+              <select class="forg__desplegablelider__select" >
+                <option disabled selected="""> Seleccione su nombre</option>"
+                <optgroup label="Armado 1">
+                  <option>AUYEROS, CRISTIAN LEONARDO</option>
+                  <option>BATTISTELLI, MARCOS</option>
+                  <option>CABRERA, MARIANO</option>
+                  <option>DELGADO, RICARDO</option>
+                  <option>GAMARRA, JONATAN</option>
+                  <option>MEDINA BENITEZ, JOSE</option>
+                  <option>MONZON, AYELEN MARIBEL</option>
+                  <option>ARGAÑARAS, LEANDRO RODRIGO</option>
+                  <option>ROBLEDO, PATRICIO</option>
+                  <option>SARMIENTO, BRIAN EZEQUIEL</option>
+                  <option>GONZALEZ, WALTER DAVID </option>
+                <optgroup label="Armado 2">
+                  <option>ARGAÑARAS, LEANDRO RODRIGO</option>
+                  <option>ROBLEDO, PATRICIO</option>
+                  <option>SAUCEDO, NESTOR</option>
+                  <option>SCHOENFELD, LUCIANO ADRIAN</option>
+                  <option>SEGOVIA, ARIEL</option>
+                  <option>SAUCEDO, HUGO HECTOR</option>
+                  <option>SARMIENTO, BRIAN EZEQUIEL</option>
+                  <option>MONZON, AYELEN MARIBEL</option>
+                  <option>GAMARRA, JONATAN</option>
+                <optgroup label="Armado 3">
+                  <option>CORREA, OSCAR NICOLAS</option>
+                  <option>GOMEZ, ISAIAS MAXIMILIANO</option>
+                  <option>LEZCANO, FABIAN GASTON</option>
+                  <option>CARDOZO, VICTOR EMANUEL</option>
+                  <option>PEDERNERA, LUIS OMAR</option>
+                <optgroup label="Armado 4">
+                  <option>VICICH, FERNANDO MARTIN</option>
+                  <option>GARCIA, FEDERICO</option>
+                  <option>LEDESMA, CLAUDIO ANDRES</option>
+                  <option>JAUME, LUCAS DARIO</option>
+                  <option>MENDOZA, CARLOS FERNANDO</option>
+                  <option>ZALAZAR, JONATAN MATIAS</option>
+              </select>
+          </div>
+          <p class="forg__lineacod">
+              <label for="codigo">
+                Código producto<strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="text" class="msg" name="codigo">
+          </p>
+          <p class="forg__lineacod">
+            <label for="insumo">
+              <span>Insumo faltante<strong><abbr title="required">*</abbr></strong></span>
+            </label>
+            <input type="text" class="msg" name="insumo">
+          </p>
+          <p class="forg__lineadesc">
+            <label for="descripcion">Descripción</label>
+            <textarea class="msg" name="descripcion"></textarea>
+          </p>
+        </section>
+        <a href="">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Relevar información
+        </a> 
+      </form>
+  </main>
+
+  
+  <!-- Este pie de página no me aparece y no se por qué -->
+  <footer class="piedepagina">
+    <p>Creado por 
+    <a href='https://www.linkedin.com/in/juliancampagnaro/' target="_blank"><font color="black"><strong>Julián Campagnaro</strong></font></a></p>
+  </footer>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Liliana Interno</title>
+    <link rel="shortcut icon" href="../recursos/configuracion.png">
+    <link href =" https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap " rel ="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body class="contenedor">
+  <header class="menu">
+    <!-- Meto el logo de Lili -->
+    <div class="menu__figura">
+      <a href="https://www.liliana.com.ar/"><img src="../recursos/liliana.png" id="lili" height="50px" width="155px" alt="Logo de Liliana"/></a>
+    </div>    
+    <!-- Dejo el mismo header para todas las páginas -->
+    <nav  class="menu__navegador">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="pag_sec.html">Auditoría Interna</a></li>
+        <li><a href="login.html">Inicio de sesión</a></li>
+        <li><a href="productos.html">Nuestros productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main__forms">
+    <section>
+      <div class="formulariocontacto">
+        <h1 class="formulariocontacto__tit">Formulario de contacto</h1>    
+        <form class="formulariocontacto__form" action="submeter-formulario.php" method="post">       
+          <div>    
+              <p class="formulariocontacto__lid">
+                <label for="nombre">Nombre Líder
+                  <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_nombre"  required="obligatorio" placeholder="Escribe tu nombre">
+              </p>
+          </div> 
+          <div>     
+              <p class="formulariocontacto__email">
+                <label for="email">Email
+                  <span class="obligatorio">*</span>
+                </label>
+                <input type="email" name="introducir_email"  required="obligatorio" placeholder="Escribe tu Email">
+              </p>
+          </div>
+          <div>
+              <p class="formulariocontacto__asunto">
+                <label for="asunto" >Asunto
+                  <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_asunto" required="obligatorio" placeholder="Escribe un asunto">
+              </p>    
+          </div>  
+          <div>  
+              <p class="formulariocontacto__mensaje">
+                <label for="mensaje">Mensaje  
+                  <span class="obligatorio">*</span>
+                </label>                     
+                <textarea name="introducir_mensaje" class="texto_mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+              </p>    
+          </div>
+          <div class="formulariocontacto__inicio">    
+              <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Enviar
+              </a> 
+          </div>
+              <p class="formulariocontacto__aviso">
+                <span class="obligatorio"> * </span>los campos son obligatorios.
+              </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Tampoco me figura el pie  -->
+  <footer class="piedepagina">
+    <p>Creado por 
+    <a href='https://www.linkedin.com/in/juliancampagnaro/' target="_blank"><font color="black"><strong>Julián Campagnaro</strong></font></a></p>
+  </footer>
+</body>
+
+</html>
+
+
