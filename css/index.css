@@ -75,233 +75,233 @@
 /* --------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------- */
-.contenedor {
-  display:grid;
-  grid-template-areas: "header header "
-                        "main main "
-                        "footer footer";
-}
+  .contenedor {
+    display:grid;
+    grid-template-areas: "header header "
+                          "main main "
+                          "footer footer";
+  }
 
 
-  /* Mismo header para todo */
-header{
-  grid-area: header;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items:center;
-  justify-content:space-around;
-  padding: 0;
-  height: 70px;
-  bottom: 10px;
-  background: var(--header-bg-color);
-  z-index: 100;
-  border-bottom:1px solid grey;
-}
+    /* Mismo header para todo */
+  header{
+    grid-area: header;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-around;
+    padding: 0;
+    height: 70px;
+    bottom: 10px;
+    background: var(--header-bg-color);
+    z-index: 100;
+    border-bottom:1px solid grey;
+  }
 
-main{
-  grid-area:main;
-}
-
-
-body{
-  background: var(--header-bg-color);
-}
-
-/* Desplegable de arriba  */
-.menu__navegador ul {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style-type: none;
-  width:500px;
-  margin:5px;
-}
-
-.menu__navegador li>a{
-  background-color: var(--header-bg-color);
-  color: white;
-  text-decoration: none;
-  font-family:'Oswald';
-}
-
-.menu__navegador li>a:hover{
-  color: var(--ch-hover-info-ng-color);
-}
-
-.menu__navegador>li{
-  list-style: none;
-  
-}
-
-.menu__figura img {
-  width: 190px;
-  margin:5px;
-}
-
-.menu{
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-/* --------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------- *
+  main{
+    grid-area:main;
+  }
 
 
+  body{
+    background: var(--header-bg-color);
+  }
+
+  /* Desplegable de arriba  */
+  .menu__navegador ul {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    width:500px;
+    margin:5px;
+  }
+
+  .menu__navegador li>a{
+    background-color: var(--header-bg-color);
+    color: white;
+    text-decoration: none;
+    font-family:'Oswald';
+  }
+
+  .menu__navegador li>a:hover{
+    color: var(--ch-hover-info-ng-color);
+  }
+
+  .menu__navegador>li{
+    list-style: none;
+    
+  }
+
+  .menu__figura img {
+    width: 190px;
+    margin:5px;
+  }
+
+  .menu{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* --------------------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------------------- *
 
 
 
-/* Primera section del main */
-.main__titular {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.main__descripcion{
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.main__titular__titulo{
-  font-family: 'Anton';
-  font-size: 35px;
-  margin-top: 5px;
-  margin-left:20px;
-  margin-right: 20px;
-  text-align: center;
-  color: #ffffff;
-  width: 370px;
-  /* background-color: yellow; */
-}
-
-.main__descripcion{
-  font-family: 'Oswald';
-  font-size:20px;
-  color:white;
-} 
-
-.main__titular__descripcion div {
-  margin:5px;
-  margin-left: 20px;
-  margin-right: 20px;
-  /* background-color: blue */; /* Lo pongo para chequear el bloque */
-  width: 300px;
-  text-align: center;
-}
-
-/* Acá pondría la config del carrusel */
-
-.carrusel__diapos{ 
-  display:grid;
-  grid-template-columns: 50% 50% ;
-  grid-template-rows: 450px 450px;
-  gap:5px;
-  margin-top:10px;
-  margin-bottom: 10px;
-  margin-left:5px;
-  margin-right: 10px;
-}
 
 
-.carrusel__diapos__imagendiapo1{
-  display:flex;
-  flex-wrap: wrap;
-  background-image: url("../recursos/lili3.jpg");
-  background-size: cover;
-  padding:5px;
-  border: 1px solid var( --ch-hover-info-ng-color);
-  border-radius: 10px;
-}
-.carrusel__diapos__imagendiapo2{
-  display:flex;
-  flex-wrap: wrap;
-  background-image: url("../recursos/lili2.jpg");
-  background-size: cover;
-  padding:5px;
-  border: 1px solid var( --ch-hover-info-ng-color);
-  border-radius: 10px;
-}
-.carrusel__diapos__imagendiapo3{
-  display:flex;
-  flex-wrap: wrap;
-  background-image: url("../recursos/lili4.jpg");
-  background-size: cover;
-  padding:5px;
-  border: 1px solid var( --ch-hover-info-ng-color);
-  border-radius: 10px;
-}
-.carrusel__diapos__imagendiapo4{
-  display:flex;
-  flex-wrap: wrap;
-  background-image: url("../recursos/lili5.jpg");
-  background-size: cover;
-  padding:5px;
-  border: 1px solid var( --ch-hover-info-ng-color);
-  border-radius: 10px;
-}
+  /* Primera section del main */
+  .main__titular {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main__descripcion{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main__titular__titulo{
+    font-family: 'Anton';
+    font-size: 35px;
+    margin-top: 5px;
+    margin-left:20px;
+    margin-right: 20px;
+    text-align: center;
+    color: #ffffff;
+    width: 370px;
+    /* background-color: yellow; */
+  }
+
+  .main__descripcion{
+    font-family: 'Oswald';
+    font-size:20px;
+    color:white;
+  } 
+
+  .main__titular__descripcion div {
+    margin:5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* background-color: blue */; /* Lo pongo para chequear el bloque */
+    width: 300px;
+    text-align: center;
+  }
+
+  /* Acá pondría la config del carrusel */
+
+  .carrusel__diapos{ 
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 450px 450px;
+    gap:2px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left:5px;
+    margin-right: 10px;
+  }
 
 
-/* Todo lo relacionado al mapa */
-.contenedormapa{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  /* background-color: green; */
-  padding:5px;
-}
+  .carrusel__diapos__imagendiapo1{
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url("../recursos/lili3.jpg");
+    background-size: cover;
+    padding:5px;
+    border: 1px solid var( --ch-hover-info-ng-color);
+    border-radius: 10px;
+  }
+  .carrusel__diapos__imagendiapo2{
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url("../recursos/lili2.jpg");
+    background-size: cover;
+    padding:5px;
+    border: 1px solid var( --ch-hover-info-ng-color);
+    border-radius: 10px;
+  }
+  .carrusel__diapos__imagendiapo3{
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url("../recursos/lili4.jpg");
+    background-size: cover;
+    padding:5px;
+    border: 1px solid var( --ch-hover-info-ng-color);
+    border-radius: 10px;
+  }
+  .carrusel__diapos__imagendiapo4{
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url("../recursos/lili5.jpg");
+    background-size: cover;
+    padding:5px;
+    border: 1px solid var( --ch-hover-info-ng-color);
+    border-radius: 10px;
+  }
 
-.contenedormapa__map{
-  padding:5px;
-}
 
-/* Redes */
-.redes{
- /*  background-color: blue; */
-  display:flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-top:20px;
-  margin-bottom:5px;
-  padding:5px;
-}
+  /* Todo lo relacionado al mapa */
+  .contenedormapa{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+    padding:5px;
+  }
 
-.redes__contenedor{
-  display:flex;
-  flex-wrap: wrap;
-}
+  .contenedormapa__map{
+    padding:5px;
+  }
 
-.redes__contenedor div{
-  padding:2px;
-}
+  /* Redes */
+  .redes{
+  /*  background-color: blue; */
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom:5px;
+    padding:5px;
+  }
 
-.redes__emoji img{
-  height:30px;
-  width:30px;
-}
+  .redes__contenedor{
+    display:flex;
+    flex-wrap: wrap;
+  }
 
-.redes__emoji img:hover{
-  background-color: var(--ch-hover-info-ng-color);
-  color: var(--body-color);
-  border-radius: 10px;
-  box-shadow: 0 0 5px var(--ch-hover-info-ng-color),
-              0 0 25px var(--ch-hover-info-ng-color),
-              0 0 50px var(--ch-hover-info-ng-color),
-              0 0 100px var(--ch-hover-info-ng-color);
-}
+  .redes__contenedor div{
+    padding:2px;
+  }
+
+  .redes__emoji img{
+    height:30px;
+    width:30px;
+  }
+
+  .redes__emoji img:hover{
+    background-color: var(--ch-hover-info-ng-color);
+    color: var(--body-color);
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--ch-hover-info-ng-color),
+                0 0 25px var(--ch-hover-info-ng-color),
+                0 0 50px var(--ch-hover-info-ng-color),
+                0 0 100px var(--ch-hover-info-ng-color);
+  }
 
 }
 
@@ -1053,7 +1053,7 @@ footer{
 
   .carrusel__diapos{ 
     display:grid;
-    grid-template-columns: 50% 50% ;
+    grid-template-columns: repeat (1, 1fr);
     grid-template-rows: 450px 450px;
     gap:5px;
     margin-top:10px;
@@ -1061,7 +1061,6 @@ footer{
     margin-left:5px;
     margin-right: 10px;
   }
-
 
   .carrusel__diapos__imagendiapo1{
     display:flex;
@@ -1081,7 +1080,7 @@ footer{
     border: 1px solid var( --ch-hover-info-ng-color);
     border-radius: 10px;
   }
-  .carrusel__diapos__imagendiapo3{
+/*   .carrusel__diapos__imagendiapo3{
     display:flex;
     flex-wrap: wrap;
     background-image: url("../recursos/lili4.jpg");
@@ -1098,7 +1097,7 @@ footer{
     padding:5px;
     border: 1px solid var( --ch-hover-info-ng-color);
     border-radius: 10px;
-  }
+  } */
 
   .contenedormapa{
     display:flex;
