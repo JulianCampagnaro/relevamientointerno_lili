@@ -324,6 +324,9 @@ header{
   margin-top:5px;
 }
 
+.contenedor__form__selec div{
+  margin:10px;
+}
 .contenedor__form  input:hover{
   background-color: var(--ch-hover-info-ng-color);
   color: var(--body-color);
@@ -347,6 +350,7 @@ header{
 }
 
 .contenedor__form button {
+  margin: 10px;
   color:whitesmoke;
 }
 .contenedor__form button:hover{
@@ -360,3 +364,25 @@ header{
               0 0 100px var(--ch-hover-info-ng-color);
 }
 
+.login {
+  border-radius: 20px;
+  box-sizing: border-box;
+  border:2px solid black;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  width: 40%;
+}
+.login__box__usuario label{
+  font-family: 'Oswald';
+  font-size: 15px;
+  color:whitesmoke;  
+  padding:10px;
+  transition: .5s;
+}
+
+.login__box .login__box__usuario input:focus ~ label,
+.login__box .login__box__usuario input:valid ~ label  {    
+  top: -20px;
+  left: 0;
+  color: var(--ch-hover-info-ng-color);
+  font-size: 12px;
+}
