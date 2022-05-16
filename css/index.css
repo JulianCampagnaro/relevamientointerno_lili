@@ -248,12 +248,115 @@ header{
 
 
 
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
 
 
+.contenedor__form{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin-top: 15px;
+/*   border-radius: 20px;
+  box-sizing: border-box;
+  border:2px solid black;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  width: 40%; */
+}
+
+.contenedor__form h3{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Anton';
+  color:whitesmoke;
+  margin-top: 20px;
+}
+
+.contenedor__form label {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Oswald';
+  color:whitesmoke;
+  padding:2px;
+}
 
 
+.contenedor__form input{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  
+}
 
 
+.contenedor__form input, textarea {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:15px;
+  background-color: #fbfbfb;
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: black; 
+  margin-top: 10px;
+  border-radius: 20px; 
+}
 
+.contenedor__form__emojis i{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  color:whitesmoke;
+  margin-top:5px;
+}
 
+.contenedor__form  input:hover{
+  background-color: var(--ch-hover-info-ng-color);
+  color: var(--body-color);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contenedor__form  textarea:hover{
+  background-color: var(--ch-hover-info-ng-color);
+  color: var(--body-color);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contenedor__form p{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  color:whitesmoke;
+  margin-top:5px;
+}
+
+.contenedor__form button {
+  color:whitesmoke;
+}
+.contenedor__form button:hover{
+  background-color: var(--ch-hover-info-ng-color);
+  color: var(--body-color);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 15px;
+  box-shadow: 0 0 5px var(--ch-hover-info-ng-color),
+              0 0 25px var(--ch-hover-info-ng-color),
+              0 0 50px var(--ch-hover-info-ng-color),
+              0 0 100px var(--ch-hover-info-ng-color);
+}
 
