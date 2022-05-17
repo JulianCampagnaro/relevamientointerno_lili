@@ -78,18 +78,32 @@
 /* --------------- */
 
 
+
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
 body{
+  display:grid;
+  grid-template-areas: "header header header header"
+                        "main main main main"
+                        "footer footer footer footer";
+                        
   background-color: var(--header-bg-color);
 }
 
 header{
+  grid-area: header;
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items:center;
   padding: 0;
   height: 70px;
-  border-bottom:1px solid grey;
+  border-bottom:2px solid grey;
 }
 
 .bg-color{
@@ -173,6 +187,9 @@ header{
 /* --------------- */
 /* --------------- */
 
+.container-fluid{
+  grid-area: main;
+}
 
 .redes{
   /*  background-color: blue; */
@@ -199,7 +216,7 @@ header{
     width:30px;
   }
 
-  .redes__emoji img:hover{
+.redes__emoji img:hover{
     background-color: var(--ch-hover-info-ng-color);
     color: var(--body-color);
     border-radius: 10px;
@@ -220,6 +237,7 @@ header{
 /* --------------- */ 
 
 .piedepagina {
+  grid-area: footer;
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -263,11 +281,6 @@ header{
   align-content: center;
   justify-content: center;
   margin-top: 15px;
-/*   border-radius: 20px;
-  box-sizing: border-box;
-  border:2px solid black;
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
-  width: 40%; */
 }
 
 .contenedor__form h3{
@@ -350,13 +363,14 @@ header{
 }
 
 .contenedor__form button {
+  font-family: 'oswald';
   margin: 10px;
   color:whitesmoke;
 }
 .contenedor__form button:hover{
   background-color: var(--ch-hover-info-ng-color);
   color: var(--body-color);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'oswald';
   border-radius: 15px;
   box-shadow: 0 0 5px var(--ch-hover-info-ng-color),
               0 0 25px var(--ch-hover-info-ng-color),
@@ -364,7 +378,7 @@ header{
               0 0 100px var(--ch-hover-info-ng-color);
 }
 
-.login {
+.borderform {
   border-radius: 20px;
   box-sizing: border-box;
   border:2px solid black;
@@ -385,4 +399,53 @@ header{
   left: 0;
   color: var(--ch-hover-info-ng-color);
   font-size: 12px;
+}
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 0.75fr 0.75fr 0.75fr; 
+    grid-template-areas: "header header"
+                        "main main"
+                        "redes redes"
+                        "footer footer";
+  }
+
+  .main__titular h1{
+    font-size:x-large;
+  }
+  
+  .main__desc{
+    font-size:medium;
+  }
+
+  .contenedormapa{
+    display:none;
+  }
+
+  header{
+    grid-area: header;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 60px;
+    bottom: 10px;
+    background: var(--header-bg-color);
+    z-index: 100;
+    border-bottom:1px solid grey;
+  }
+
+  .encabezado__ham{
+    color:whitesmoke;
+  }
+
+
 }
