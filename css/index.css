@@ -389,6 +389,10 @@ li{
   width: 130%;
 }
 
+.tamaño_form_rel{
+  width:80%;
+}
+
 .borderform {
   border-radius: 20px;
   box-sizing: border-box;
@@ -421,12 +425,22 @@ li{
   font-size: 12px;
 }
 
-@media (min-width:720px) and (max-width:1100){
-  .boton_hamburguesa  {
-    display:none;
-  }
+
+.contenedor__check{
+  border: 2px solid var(--ch-hover-info-ng-color);
+  border-radius: 15px;
+  padding:25px;
 }
 
+  
+.contenedor__drop {
+  margin-top:40px;
+  background-color: var(--header-bg-color);
+}
+
+.contenedor__inputs{
+  margin-top:30px;
+}
 
 
 @media (min-width: 320px) and (max-width: 720px) {

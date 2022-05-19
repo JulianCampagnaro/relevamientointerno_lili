@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 
@@ -57,129 +59,94 @@
     </div>
   </header>
 
-  <main class="main__forms">
-      <form class="forg" action="submeter-formulario.php" method="post">
-        <h1 class="forg__titulo">Relevamiento</h1>
-        <section class="forg__desc">
-          <p>Los campos obligatorios contienen <strong><abbr title="required">*</abbr></strong></p>
-          <fieldset class="forg__desc__select">
-            <legend>Motivo<strong><abbr title="required">*</abbr></strong></legend>
-            <ul class="forg__desc__select__motivos">
-                  <div>
-                    <label for="mot1">
-                      <input type="radio" id="mot1" name="title" value="K">
-                      Reproceso
-                    </label>
-                    <label for="mot2">
-                      <input type="radio" id="mot2" name="title" value="N">
-                      Incompleto
-                    </label>
-                  </div>
-                  <div>
-                    <label for="mot3">
-                      <input type="radio" id="mot3" name="title" value="Q">
-                      Defecto superficial
-                    </label>
-                    <label for="mot4">
-                      <input type="radio" id="mot4" name="title" value="S">
-                      Otros
-                    </label>
-                  </div>
-                  <div>
-                    <label for="mot5">
-                      <input type="radio" id="mot5" name="title" value="J">
-                      Funcionamiento
-                    </label>
-                  </div>
-                  <div>
-                    <label for="mot6">
-                      <input type="radio" id="mot6" name="title" value="L">
-                      Faltante de pz plástica
-                    </label>
-                  </div>
-                  <div></div>
-                    <label for="mot7">
-                      <input type="radio" id="mot7" name="title" value="M">
-                      Ausentismo
-                    </label>
-                  </div>
-            </ul>
-          </fieldset>
-          <div class="forg__desplegablesector">
-              <label for="select1">Sector</label>
-              <select class="forg__desplegablesector__select" >
-                <option disabled selected=""">Seleccione sector</option>"
-                <option>Armado 1</option>
-                <option>Armado 2</option>
-                <option>Armado 3</option>
-                <option>Armado 4</option>
+  <main class="main__forms container-fluid">
+    <section class="container contenedor__form borderform">
+      <div class="row justify-content-md-center">
+        <h3 class="center-align display-4">Relevamiento</h3>
+        <article class="col-xl-6  col-12 offset-s2 tamaño_form_rel">
+          <form class="login__box" method="POST" action="formulario-contacto.php  contenedor__form__selec">
+            
+              <div class="form-check contenedor__check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label contenedor__check__op" for="flexRadioDefault1">
+                  Reproceso
+                </label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label contenedor__check__op" for="flexRadioDefault2">
+                  Defectos superficiales
+                </label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label contenedor__check__op" for="flexRadioDefault3">
+                  Faltante pieza plástica
+                </label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                <label class="form-check-label contenedor__check__op" for="flexRadioDefault4">
+                  Faltante pieza pintada
+                </label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                <label class="form-check-label contenedor__check__op" for="flexRadioDefault5">
+                  Faltante de chapa
+                </label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                <label class="form-check-label contenedor__check__op" for="flexRadioDefault6">
+                  Faltante de insumo
+                </label>
+                <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault7">
+                <label class="form-check-label contenedor__check__op" for="flexRadioDefault7">
+                  Problema con pieza/piezas
+                </label>
+              </div>  
+
+            <div class="contenedor__drop">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Sector</option>
+                <option value="1">Armado 1</option>
+                <option value="2">Armado 2</option>
+                <option value="3">Armado 3</option>
+                <option value="4">Armado 4</option>
               </select>
-          </div>
-          <div class="forg__desplegablelider">
-              <label for="select2">Líder<strong><abbr title="required">*</abbr></strong></label>
-              <select class="forg__desplegablelider__select" >
-                <option disabled selected="""> Seleccione su nombre</option>"
-                <optgroup label="Armado 1">
-                  <option>AUYEROS, CRISTIAN LEONARDO</option>
-                  <option>BATTISTELLI, MARCOS</option>
-                  <option>CABRERA, MARIANO</option>
-                  <option>DELGADO, RICARDO</option>
-                  <option>GAMARRA, JONATAN</option>
-                  <option>MEDINA BENITEZ, JOSE</option>
-                  <option>MONZON, AYELEN MARIBEL</option>
-                  <option>ARGAÑARAS, LEANDRO RODRIGO</option>
-                  <option>ROBLEDO, PATRICIO</option>
-                  <option>SARMIENTO, BRIAN EZEQUIEL</option>
-                  <option>GONZALEZ, WALTER DAVID </option>
-                <optgroup label="Armado 2">
-                  <option>ARGAÑARAS, LEANDRO RODRIGO</option>
-                  <option>ROBLEDO, PATRICIO</option>
-                  <option>SAUCEDO, NESTOR</option>
-                  <option>SCHOENFELD, LUCIANO ADRIAN</option>
-                  <option>SEGOVIA, ARIEL</option>
-                  <option>SAUCEDO, HUGO HECTOR</option>
-                  <option>SARMIENTO, BRIAN EZEQUIEL</option>
-                  <option>MONZON, AYELEN MARIBEL</option>
-                  <option>GAMARRA, JONATAN</option>
-                <optgroup label="Armado 3">
-                  <option>CORREA, OSCAR NICOLAS</option>
-                  <option>GOMEZ, ISAIAS MAXIMILIANO</option>
-                  <option>LEZCANO, FABIAN GASTON</option>
-                  <option>CARDOZO, VICTOR EMANUEL</option>
-                  <option>PEDERNERA, LUIS OMAR</option>
-                <optgroup label="Armado 4">
-                  <option>VICICH, FERNANDO MARTIN</option>
-                  <option>GARCIA, FEDERICO</option>
-                  <option>LEDESMA, CLAUDIO ANDRES</option>
-                  <option>JAUME, LUCAS DARIO</option>
-                  <option>MENDOZA, CARLOS FERNANDO</option>
-                  <option>ZALAZAR, JONATAN MATIAS</option>
+            </div>  
+            <div class="contenedor__drop">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Líder</option>
+                <option value="1">Líder 1</option>
+                <option value="2">Líder 2</option>
+                <option value="3">Líder 3</option>
+                <option value="4">Líder 4</option>
+                <option value="5">Líder 5</option>
+                <option value="6">Líder 6</option>
+                <option value="7">Líder 7</option>
+                <option value="8">Líder 8</option>
+                <option value="9">Líder 9</option>
+                <option value="10">Líder 10</option>
               </select>
-          </div>
-          <p class="forg__lineacod">
-              <label for="codigo">
-                Código producto<strong><abbr title="required">*</abbr></strong>
-              </label>
-              <input type="text" class="msg" name="codigo">
-          </p>
-          <p class="forg__lineacod">
-            <label for="insumo">
-              <span>Insumo faltante<strong><abbr title="required">*</abbr></strong></span>
-            </label>
-            <input type="text" class="msg" name="insumo">
-          </p>
-          <p class="forg__lineadesc">
-            <label for="descripcion">Descripción</label>
-            <textarea class="msg" name="descripcion"></textarea>
-          </p>
-        </section>
-        <a href="">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Relevar información
-        </a> 
+            </div>
+            <section class="contenedor__inputs">
+              <div class="input-field contenedor__form__emojis login__box__usuario">
+                <i class="material-icons ">
+                  view_in_ar
+                </i>
+                <input class="col-xl-12  col-12" type="text" name="nombre" required>
+                <label for="nombre">Código de Producto</label>
+              </div>
+              <div class="input-field contenedor__form__emojis login__box__usuario">
+                <i class="material-icons ">
+                  extension
+                </i>
+                <input class="col-xl-12  col-12" type="text" name="nombre" required>
+                <label for="nombre">Código de Insumo</label>
+              </div>
+            </section> 
+
+            <div class="input-field contenedor__form__emojis login__box__usuario">
+              <i class="material-icons prefix ">mode_edit</i>
+              <textarea class="col-xl-12  col-12 " name="mensaje" id="" rows="10" class="materialize-textarea"  length="140" required></textarea>
+              <label for="mensaje">Descripción</label>
+            </div>
+            
+            <p class="center-align botón contenedor__form__emojis boton">
+              <button class="waves-effect waves-light btn" type="submit">Relevar información</button>
+            </p>
       </form>
   </main>
 
