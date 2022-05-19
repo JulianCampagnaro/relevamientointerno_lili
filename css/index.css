@@ -105,7 +105,7 @@ header{
   height: 70px;
   border-bottom:2px solid grey;
 }
-
+  
 .bg-color{
   background-color: var(--header-bg-color);
 }
@@ -116,6 +116,7 @@ header{
 
 .color-nav{
   color:whitesmoke;
+  text-decoration: none;
 }
 
 .active_h :hover{
@@ -124,6 +125,9 @@ header{
   border-radius: 5px;
 }
 
+li{
+  list-style: none;
+}
 
 
 
@@ -144,6 +148,7 @@ header{
   font-family: 'Anton';
   color:whitesmoke;
   margin-top:10px;
+  font-size:xx-large;
 }
 
 .main__desc{
@@ -367,15 +372,21 @@ header{
   margin: 10px;
   color:whitesmoke;
 }
+
 .contenedor__form button:hover{
   background-color: var(--ch-hover-info-ng-color);
   color: var(--body-color);
   font-family: 'oswald';
   border-radius: 15px;
+  border-color:  var(--ch-hover-info-ng-color);
   box-shadow: 0 0 5px var(--ch-hover-info-ng-color),
               0 0 25px var(--ch-hover-info-ng-color),
               0 0 50px var(--ch-hover-info-ng-color),
               0 0 100px var(--ch-hover-info-ng-color);
+}
+
+.tamaño_form {
+  width: 130%;
 }
 
 .borderform {
@@ -385,6 +396,7 @@ header{
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   width: 40%;
 }
+
 .login__box__usuario label{
   font-family: 'Oswald';
   font-size: 15px;
@@ -399,10 +411,21 @@ header{
   left: 0;
   color: var(--ch-hover-info-ng-color);
   font-size: 12px;
+} 
+
+.login__box .login__box__usuario textarea:focus ~ label,
+.login__box .login__box__usuario textarea:valid ~ label  {    
+  top: -20px;
+  left: 0;
+  color: var(--ch-hover-info-ng-color);
+  font-size: 12px;
 }
 
-
-
+@media (min-width:720px) and (max-width:1100){
+  .boton_hamburguesa  {
+    display:none;
+  }
+}
 
 
 
