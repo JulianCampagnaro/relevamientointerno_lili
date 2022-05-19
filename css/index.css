@@ -139,6 +139,14 @@ li{
 /* --------------- */
 /* --------------- */
 
+.main{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
+}
 .main__titular {
   display:flex;
   flex-direction: row;
@@ -483,6 +491,43 @@ li{
   .encabezado__ham{
     color:whitesmoke;
   }
+}
 
+@media  (max-width: 320px) {
+  .grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 0.75fr 0.75fr 0.75fr; 
+    grid-template-areas: "header "
+                        "main "
+                        "main"
+                        "redes "
+                        "footer ";
+  }
 
+  .contenedormapa{
+    display:none;
+  }
+
+  .main__titular h1{
+    font-size:large;
+  }
+  
+  .main__desc{
+    font-size:small;
+  }
+  
+  header{
+    grid-area: header;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 60px;
+    bottom: 10px;
+    background: var(--header-bg-color);
+    z-index: 100;
+    border-bottom:1px solid grey;
+  }
 }
