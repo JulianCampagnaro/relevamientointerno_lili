@@ -450,6 +450,33 @@ li{
   margin-top:30px;
 }
 
+.galeria {
+  
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap:20px;
+}
+
+.galeria img {
+  margin-top: 8px;
+  vertical-align: middle;
+  border-radius: 15px;
+}
+
+.galeria img:hover {
+  
+  background-color: var(--ch-hover-info-ng-color);
+  color: var(--body-color);
+  font-family: 'oswald';
+  border-radius: 15px;
+  border-color:  var(--ch-hover-info-ng-color);
+  box-shadow: 0 0 5px var(--ch-hover-info-ng-color),
+              0 0 25px var(--ch-hover-info-ng-color),
+              0 0 50px var(--ch-hover-info-ng-color),
+              0 0 100px var(--ch-hover-info-ng-color);
+}
 
 @media (min-width: 320px) and (max-width: 720px) {
   .grid{
