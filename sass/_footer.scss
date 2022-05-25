@@ -1,0 +1,29 @@
+.piedepagina{
+    grid-area: footer;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    text-align:center; 
+    text-decoration:none;
+    font-size: $size-input;
+    font-family: $font;
+
+    a{
+        &:hover{
+            background-color: $color-principal;
+            color: $color-fondos;
+            font-family:$font;
+            border-radius: $border-radius-footer;
+            box-shadow: 0 0 5px $color-principal,
+                        0 0 25px $color-principal,
+                        0 0 50px $color-principal,
+                        0 0 100px $color-principal;
+        }
+    }
+
+    p{
+        color:$color-font;
+    }
+}
