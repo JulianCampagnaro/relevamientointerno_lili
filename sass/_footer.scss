@@ -27,3 +27,24 @@
         color:$color-font;
     }
 }
+
+
+
+
+@media (min-width: 593px) and (max-width: 720px) {
+    .piedepagina{
+        font-size: small;
+    }
+}
+
+@media (min-width:320px) and (max-width:593px ){
+    .piedepagina{
+        font-size: small;
+    }
+}
+
+@media (max-width:320px){
+    .piedepagina{
+        font-size: x-small;
+    }
+}

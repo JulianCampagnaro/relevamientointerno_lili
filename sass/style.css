@@ -83,6 +83,24 @@ header li {
   color: whitesmoke;
 }
 
+@media (min-width: 593px) and (max-width: 720px) {
+  .piedepagina {
+    font-size: small;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 593px) {
+  .piedepagina {
+    font-size: small;
+  }
+}
+
+@media (max-width: 320px) {
+  .piedepagina {
+    font-size: x-small;
+  }
+}
+
 .contenedor__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,7 +258,7 @@ header li {
 }
 
 .tamaño_form {
-  width: 130%;
+  width: 120%;
 }
 
 .tamaño_form_rel {
@@ -281,28 +299,17 @@ header li {
   transition: .5s;
 }
 
-.login__box__usuario input:focus {
+/* ACÁ NO SÉ COMO COLOCAR ESTO EN EL ANIDADO, ANTES PROBE DE UNA MANERA PERO NO ME LO TOMA DE MANERA CORRECTA */
+.login__box .login__box__usuario input:focus ~ label,
+.login__box .login__box__usuario input:valid ~ label {
   top: -20px;
   left: 0;
   color: #9DF4E2;
   font-size: 12px;
 }
 
-.login__box__usuario input:valid {
-  top: -20px;
-  left: 0;
-  color: #9DF4E2;
-  font-size: 12px;
-}
-
-.login__box__usuario textarea:focus {
-  top: -20px;
-  left: 0;
-  color: #9DF4E2;
-  font-size: 12px;
-}
-
-.login__box__usuario textarea:valid {
+.login__box .login__box__usuario textarea:focus ~ label,
+.login__box .login__box__usuario textarea:valid ~ label {
   top: -20px;
   left: 0;
   color: #9DF4E2;
@@ -315,22 +322,6 @@ header li {
     color:$color-font;  
     padding:10px;
     transition: .5s;
-    }
-    
-    .login__box .login__box__usuario input:focus ~ label,
-    .login__box .login__box__usuario input:valid ~ label  {    
-    top: -20px;
-    left: 0;
-    color: $color-principal;
-    font-size: 12px;
-    } 
-    
-    .login__box .login__box__usuario textarea:focus ~ label,
-    .login__box .login__box__usuario textarea:valid ~ label  {    
-    top: -20px;
-    left: 0;
-    color: $color-principal;
-    font-size: 12px;
     } */
 .galeria {
   display: -webkit-box;
@@ -362,7 +353,7 @@ header li {
           box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
 }
 
-@media (min-width: 320px) and (max-width: 720px) {
+@media (min-width: 593px) and (max-width: 720px) {
   .grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -398,16 +389,102 @@ header li {
     border-bottom: 1px solid grey;
   }
   .main__titular h1 {
-    font-size: x-large;
+    font-size: xx-large;
+    margin: 3px;
   }
-  .main__desc p {
-    font-size: medium;
+  .main__desc div p {
+    font-size: large;
+    margin: 3px;
   }
   .contenedormapa__map {
     display: none;
   }
   .encabezado__ham {
     color: whitesmoke;
+  }
+  .contenedor__form div h3 {
+    font-size: x-large;
+  }
+  .login__box__usuario label {
+    font-family: "Oswald";
+    font-size: small;
+    color: whitesmoke;
+    padding: 10px;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 593px) {
+  .grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1.5fr 0.75fr 0.75fr 0.75fr;
+        grid-template-rows: 1.5fr 0.75fr 0.75fr 0.75fr;
+        grid-template-areas: "header " "main " "main" "redes " "footer ";
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: header;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    height: 60px;
+    bottom: 10px;
+    background: #1F2023;
+    z-index: 100;
+    border-bottom: 1px solid grey;
+  }
+  .contenedormapa__map {
+    display: none;
+  }
+  .main__titular h1 {
+    font-size: x-large;
+    margin: 3px;
+  }
+  .main__desc p {
+    font-size: small;
+    margin: 3px;
+  }
+  .contenedor__form div h3 {
+    font-size: large;
+  }
+  .login__box__usuario label {
+    font-family: "Oswald";
+    font-size: x-small;
+    color: whitesmoke;
+    padding: 8px;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .login__box .login__box__usuario input:focus ~ label,
+  .login__box .login__box__usuario input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #9DF4E2;
+    font-size: 8px;
+  }
+  .login__box .login__box__usuario textarea:focus ~ label,
+  .login__box .login__box__usuario textarea:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #9DF4E2;
+    font-size: 8px;
   }
 }
 
@@ -451,9 +528,11 @@ header li {
   }
   .main__titular h1 {
     font-size: large;
+    margin: 3px;
   }
   .main__desc p {
-    font-size: small;
+    font-size: x-small;
+    margin: 3px;
   }
 }
 
@@ -602,99 +681,5 @@ body .main .redes__emoji:hover {
   border-radius: 12px;
   -webkit-box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
           box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
-}
-
-@media (min-width: 320px) and (max-width: 720px) {
-  .grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1.5fr 0.75fr 0.75fr 0.75fr;
-        grid-template-rows: 1.5fr 0.75fr 0.75fr 0.75fr;
-        grid-template-areas: "header header" "main main" "redes redes" "footer footer";
-  }
-  .main__titular h1 {
-    font-size: x-large;
-  }
-  .main__desc {
-    font-size: medium;
-  }
-  .contenedormapa {
-    display: none;
-  }
-  header {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: header;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0;
-    height: 60px;
-    bottom: 10px;
-    background: #1F2023;
-    z-index: 100;
-    border-bottom: 1px solid grey;
-  }
-  .encabezado__ham {
-    color: whitesmoke;
-  }
-}
-
-@media (max-width: 320px) {
-  .grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1.5fr 0.75fr 0.75fr 0.75fr;
-        grid-template-rows: 1.5fr 0.75fr 0.75fr 0.75fr;
-        grid-template-areas: "header " "main " "main" "redes " "footer ";
-  }
-  .contenedormapa {
-    display: none;
-  }
-  .main__titular h1 {
-    font-size: large;
-  }
-  .main__desc {
-    font-size: small;
-  }
-  header {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: header;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0;
-    height: 60px;
-    bottom: 10px;
-    background: #1F2023;
-    z-index: 100;
-    border-bottom: 1px solid grey;
-  }
 }
 /*# sourceMappingURL=style.css.map */

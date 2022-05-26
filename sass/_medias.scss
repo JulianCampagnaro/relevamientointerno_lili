@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 720px) {
+@media (min-width: 593px) and (max-width: 720px) {
     
     .grid{
         grid-template-columns: 1fr 1fr;
@@ -24,11 +24,13 @@
     }
 
     .main__titular h1{
-        font-size:x-large;
+        font-size:xx-large;
+        margin:3px;
     }
     
-    .main__desc p{
-        font-size:medium;
+    .main__desc div p{
+        font-size:large;
+        margin:3px;
     }
     
     .contenedormapa__map{
@@ -38,8 +40,115 @@
     .encabezado__ham{
         color:$color-font;
     }
+    
+    
+    .contenedor__form{
+        div {
+            h3{
+                font-size: x-large;
+            }
+        }
+    } 
+
+    .login__box{
+
+        &__usuario{
+            label{
+                font-family: $font-desc;
+                font-size: small;
+                color:$color-font;  
+                padding:10px;
+                transition: .5s;
+            }
+    
+            
+            }
+    }
+    
 }
     
+@media  (min-width: 320px) and (max-width:593px) {
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.5fr 0.75fr 0.75fr 0.75fr; 
+        grid-template-areas: "header "
+                            "main "
+                            "main"
+                            "redes "
+                            "footer ";
+    }
+
+    header{
+        grid-area: header;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 60px;
+        bottom: 10px;
+        background: $color-fondos;
+        z-index: 100;
+        border-bottom:1px solid grey;
+    }
+    
+    .contenedormapa__map{
+        display:none;
+    }
+
+    .main__titular h1{
+        font-size:x-large;
+        margin:3px;
+    }
+
+    .main__desc p{
+        font-size:small;
+        margin:3px;
+    }
+
+    .contenedor__form{
+        div {
+            h3{
+                font-size: large;
+            }
+        }
+    } 
+
+    .login__box{
+
+        &__usuario{
+            label{
+                font-family: $font-desc;
+                font-size: x-small;
+                color:$color-font;  
+                padding:8px;
+                transition: .5s;
+            }
+    
+            
+            }
+    }
+    
+    .login__box .login__box__usuario input:focus ~ label,
+    .login__box .login__box__usuario input:valid ~ label  {    
+        top: -20px;
+        left: 0;
+        color: $color-principal;
+        font-size: 8px;
+    } 
+
+    .login__box .login__box__usuario textarea:focus ~ label,
+    .login__box .login__box__usuario textarea:valid ~ label  {    
+        top: -20px;
+        left: 0;
+        color: $color-principal;
+        font-size: 8px;
+    }
+
+    
+}
+
 @media  (max-width: 320px) {
     .grid{
         grid-template-columns: 1fr 1fr;
@@ -72,11 +181,14 @@
 
     .main__titular h1{
         font-size:large;
+        margin:3px;
     }
 
     .main__desc p{
-        font-size:small;
+        font-size:x-small;
+        margin:3px;
     }
 
+    
     
 }
