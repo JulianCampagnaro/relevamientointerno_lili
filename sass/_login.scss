@@ -1,0 +1,119 @@
+.login__box{
+
+    &__usuario{
+        label{
+            font-family: $font-desc;
+            font-size: 15px;
+            color:$color-font;  
+            padding:10px;
+            transition: .5s;
+        }
+
+        input{
+            &:focus{    
+                top: -20px;
+                left: 0;
+                color: $color-principal;
+                font-size: 12px;
+            }
+
+            &:valid{
+                top: -20px;
+                left: 0;
+                color: $color-principal;
+                font-size: 12px;
+            }
+        }
+
+        textarea{
+            &:focus{    
+                top: -20px;
+                left: 0;
+                color: $color-principal;
+                font-size: 12px;
+            }
+
+            &:valid{
+                top: -20px;
+                left: 0;
+                color: $color-principal;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .login__box__usuario label{
+    font-family: $font-desc;
+    font-size: 15px;
+    color:$color-font;  
+    padding:10px;
+    transition: .5s;
+    }
+    
+    .login__box .login__box__usuario input:focus ~ label,
+    .login__box .login__box__usuario input:valid ~ label  {    
+    top: -20px;
+    left: 0;
+    color: $color-principal;
+    font-size: 12px;
+    } 
+    
+    .login__box .login__box__usuario textarea:focus ~ label,
+    .login__box .login__box__usuario textarea:valid ~ label  {    
+    top: -20px;
+    left: 0;
+    color: $color-principal;
+    font-size: 12px;
+    } */

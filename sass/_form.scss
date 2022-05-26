@@ -1,0 +1,146 @@
+
+.contenedor__form{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-top: 15px;
+
+    h3{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        font-family: $font-titulos;
+        color:$color-font;
+        margin-top: 20px;
+    }
+
+    label{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        font-family: $font-desc;
+        color:$color-font;
+        padding:2px;
+    }
+
+    input{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+
+        &:hover{
+            background-color: $color-principal;
+            color: $color-fondos;
+            font-family:$font;
+        }
+    }
+
+    textarea{
+        &:hover{
+            background-color: $color-principal;
+            color: $color-fondos;
+            font-family:$font;
+        }
+    }
+
+    input, textarea{
+        font-family: $font;
+        font-size:$size-input;
+        background-color: #fbfbfb;
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: black; 
+        margin-top: 10px;
+        border-radius: $border-radius-input; 
+    }
+
+    &__emojis{
+        i{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            color:$color-font;
+            margin-top:5px;
+        }
+    }
+    
+    &__selec{
+        div{
+            margin:10px;
+        }
+    }
+
+    p{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        color:$color-font;
+        margin-top:5px;
+    }
+
+    button{
+        font-family: $font-desc;
+        margin: 10px;
+        color:$color-font;
+
+        &:hover{
+            background-color: $color-principal;
+            color: $color-fondos;
+            font-family: $font-desc;
+            border-radius: $border-radius;
+            border-color:  $color-principal;
+            box-shadow: 0 0 5px $color-principal,
+                        0 0 25px $color-principal,
+                        0 0 50px $color-principal,
+                        0 0 100px $color-principal;
+        }
+    }
+
+}
+
+.tamaño_form{
+    width: 130%;
+
+    &_rel{
+        width:80%;
+    }
+}
+
+.borderform{
+    border-radius: $border-radius-input;
+    box-sizing: border-box;
+    border:2px solid black;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    width: 40%;
+}
+
+.contenedor{
+    &__check{
+        border: 2px solid $color-principal;
+        border-radius: 15px;
+        padding:25px;
+    }
+
+    &__drop{
+        margin-top:40px;
+        background-color: $color-fondos;
+        }
+    
+        &__inputs{
+            margin-top:30px;
+        }
+}
+
+
