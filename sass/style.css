@@ -534,6 +534,31 @@ header li {
     font-size: x-small;
     margin: 3px;
   }
+  .contenedor__form div h3 {
+    font-size: large;
+  }
+  .login__box__usuario label {
+    font-family: "Oswald";
+    font-size: x-small;
+    color: whitesmoke;
+    padding: 8px;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .login__box .login__box__usuario input:focus ~ label,
+  .login__box .login__box__usuario input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #9DF4E2;
+    font-size: 8px;
+  }
+  .login__box .login__box__usuario textarea:focus ~ label,
+  .login__box .login__box__usuario textarea:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #9DF4E2;
+    font-size: 8px;
+  }
 }
 
 * {

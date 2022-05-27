@@ -189,6 +189,43 @@
         margin:3px;
     }
 
+    .contenedor__form{
+        div {
+            h3{
+                font-size: large;
+            }
+        }
+    } 
+
+    .login__box{
+
+        &__usuario{
+            label{
+                font-family: $font-desc;
+                font-size: x-small;
+                color:$color-font;  
+                padding:8px;
+                transition: .5s;
+            }
     
+            
+            }
+    }
+    
+    .login__box .login__box__usuario input:focus ~ label,
+    .login__box .login__box__usuario input:valid ~ label  {    
+        top: -20px;
+        left: 0;
+        color: $color-principal;
+        font-size: 8px;
+    } 
+
+    .login__box .login__box__usuario textarea:focus ~ label,
+    .login__box .login__box__usuario textarea:valid ~ label  {    
+        top: -20px;
+        left: 0;
+        color: $color-principal;
+        font-size: 8px;
+    }
     
 }
