@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
+@import 'sasscript';
 @import 'form';
 @import 'login';
 @import 'galeria';
@@ -118,4 +119,13 @@ body{
 
     
 
+}
+
+$imagenes: (key1: lili4, key2: lili2, key3: lili5);
+
+@each $key, $imagen in $imagenes {
+    .#{$key}-card{
+        background-image: url('../recursos/#($imagen).jpg');
+
+    }
 }

@@ -707,4 +707,16 @@ body .main .redes__emoji:hover {
   -webkit-box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
           box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
 }
+
+.key1-card {
+  background-image: url("../recursos/#($imagen).jpg");
+}
+
+.key2-card {
+  background-image: url("../recursos/#($imagen).jpg");
+}
+
+.key3-card {
+  background-image: url("../recursos/#($imagen).jpg");
+}
 /*# sourceMappingURL=style.css.map */
