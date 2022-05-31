@@ -15,5 +15,13 @@ $border-radius-input:20px;
 
 
 
-
+.hover {
+    background-color: $color-principal;
+        color: $color-fondos;
+        border-radius: $border-radius;
+        box-shadow: 0 0 5px $color-principal,
+                    0 0 25px $color-principal,
+                    0 0 50px $color-principal,
+                    0 0 100px $color-principal;
+}
 

@@ -19,6 +19,7 @@ margin: 0;
 /* --------------- */
 /* --------------- */
 
+
 body{
 
     display:grid;
@@ -36,7 +37,7 @@ body{
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
-        align-content: center;
+        align-items: center;
         justify-content: center;
 
         &__titular{
@@ -52,11 +53,7 @@ body{
         }
 
         &__desc{
-            display:flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
+            @extend .main;
             font-size: $size-desc-main;
             font-family: $font-desc;
             color:$color-font;
@@ -77,10 +74,7 @@ body{
         }
         
         .redes{
-            display:flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
+            @extend .main;
             margin-top:20px;
             margin-bottom:5px;
             padding:5px;
@@ -101,13 +95,7 @@ body{
                 }
 
                 &:hover{
-                    background-color: $color-principal;
-                    color: $color-fondos;
-                    border-radius: $border-radius;
-                    box-shadow: 0 0 5px $color-principal,
-                                0 0 25px $color-principal,
-                                0 0 50px $color-principal,
-                                0 0 100px $color-principal;
+                    @extend .hover;
                 }
 
             }

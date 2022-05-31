@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.hover, .piedepagina a:hover, .contenedor__form button:hover, .contenedor__form__emojis i button:hover, .galeria .img:hover, body .main .redes__emoji:hover, body .main__desc .redes__emoji:hover {
+  background-color: #9DF4E2;
+  color: #1F2023;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
+          box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
+}
+
 header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -70,15 +78,6 @@ header li {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.piedepagina a:hover {
-  background-color: #9DF4E2;
-  color: #1F2023;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
-          box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
-}
-
 .piedepagina p {
   color: whitesmoke;
 }
@@ -101,7 +100,7 @@ header li {
   }
 }
 
-.contenedor__form {
+.contenedor__form, .contenedor__form h3, .contenedor__form label, .contenedor__form input, .contenedor__form__emojis i, .contenedor__form p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,76 +118,31 @@ header li {
   margin-top: 15px;
 }
 
-.contenedor__form h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.contenedor__form h3, .contenedor__form h3 h3, .contenedor__form label h3, .contenedor__form input h3, .contenedor__form__emojis i h3, .contenedor__form p h3 {
   font-family: "Anton";
   color: whitesmoke;
   margin-top: 20px;
 }
 
-.contenedor__form label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.contenedor__form label, .contenedor__form h3 label, .contenedor__form label label, .contenedor__form input label, .contenedor__form__emojis i label, .contenedor__form p label {
   font-family: "Oswald";
   color: whitesmoke;
   padding: 2px;
 }
 
-.contenedor__form input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.contenedor__form input:hover {
+.contenedor__form input:hover, .contenedor__form__emojis i input:hover {
   background-color: #9DF4E2;
   color: #1F2023;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.contenedor__form textarea:hover {
+.contenedor__form textarea:hover, .contenedor__form__emojis i textarea:hover {
   background-color: #9DF4E2;
   color: #1F2023;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.contenedor__form input, .contenedor__form textarea {
+.contenedor__form input, .contenedor__form h3 input, .contenedor__form label input, .contenedor__form input input, .contenedor__form__emojis i input, .contenedor__form p input, .contenedor__form textarea, .contenedor__form h3 textarea, .contenedor__form label textarea, .contenedor__form input textarea, .contenedor__form__emojis i textarea, .contenedor__form p textarea {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 15px;
   background-color: #fbfbfb;
@@ -200,20 +154,6 @@ header li {
 }
 
 .contenedor__form__emojis i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: whitesmoke;
   margin-top: 5px;
 }
@@ -222,39 +162,15 @@ header li {
   margin: 10px;
 }
 
-.contenedor__form p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.contenedor__form p, .contenedor__form h3 p, .contenedor__form label p, .contenedor__form input p, .contenedor__form__emojis i p, .contenedor__form p p {
   color: whitesmoke;
   margin-top: 5px;
 }
 
-.contenedor__form button {
+.contenedor__form button, .contenedor__form h3 button, .contenedor__form label button, .contenedor__form input button, .contenedor__form__emojis i button, .contenedor__form p button {
   font-family: "Oswald";
   margin: 10px;
   color: whitesmoke;
-}
-
-.contenedor__form button:hover {
-  background-color: #9DF4E2;
-  color: #1F2023;
-  font-family: "Oswald";
-  border-radius: 12px;
-  border-color: #9DF4E2;
-  -webkit-box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
-          box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
 }
 
 .tamaño_form {
@@ -335,6 +251,7 @@ header li {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .galeria .img {
@@ -343,22 +260,11 @@ header li {
   border-radius: 12px;
 }
 
-.galeria .img:hover {
-  background-color: #9DF4E2;
-  color: #1F2023;
-  font-family: "Oswald";
-  border-radius: 12px;
-  border-color: #9DF4E2;
-  -webkit-box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
-          box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
-}
-
 .key1-card {
   background-image: url("../recursos/prod1.jpg");
   background-size: cover;
   height: 200px;
   width: 200px;
-  border: 2px solid yellow;
 }
 
 .key2-card {
@@ -366,7 +272,6 @@ header li {
   background-size: cover;
   height: 200px;
   width: 200px;
-  border: 2px solid yellow;
 }
 
 .key3-card {
@@ -374,7 +279,6 @@ header li {
   background-size: cover;
   height: 200px;
   width: 200px;
-  border: 2px solid yellow;
 }
 
 .key4-card {
@@ -382,7 +286,6 @@ header li {
   background-size: cover;
   height: 200px;
   width: 200px;
-  border: 2px solid yellow;
 }
 
 .key5-card {
@@ -390,7 +293,6 @@ header li {
   background-size: cover;
   height: 200px;
   width: 200px;
-  border: 2px solid yellow;
 }
 
 .key6-card {
@@ -398,7 +300,6 @@ header li {
   background-size: cover;
   height: 200px;
   width: 200px;
-  border: 2px solid yellow;
 }
 
 .key7-card {
@@ -406,7 +307,41 @@ header li {
   background-size: cover;
   height: 200px;
   width: 200px;
-  border: 2px solid yellow;
+}
+
+.key8-card {
+  background-image: url("../recursos/prod8.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+}
+
+.key9-card {
+  background-image: url("../recursos/prod9.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+}
+
+.key10-card {
+  background-image: url("../recursos/prod10.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+}
+
+.key11-card {
+  background-image: url("../recursos/prod11.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+}
+
+.key12-card {
+  background-image: url("../recursos/prod12.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
 }
 
 @media (min-width: 593px) and (max-width: 720px) {
@@ -431,9 +366,8 @@ header li {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -458,7 +392,7 @@ header li {
   .encabezado__ham {
     color: whitesmoke;
   }
-  .contenedor__form div h3 {
+  .contenedor__form div h3, .contenedor__form h3 div h3, .contenedor__form label div h3, .contenedor__form input div h3, .contenedor__form__emojis i div h3, .contenedor__form p div h3 {
     font-size: x-large;
   }
   .login__box__usuario label {
@@ -468,6 +402,78 @@ header li {
     padding: 10px;
     -webkit-transition: .5s;
     transition: .5s;
+  }
+  .key1-card {
+    background-image: url("../recursos/prod1.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+  .key2-card {
+    background-image: url("../recursos/prod2.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+  .key3-card {
+    background-image: url("../recursos/prod3.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+  .key4-card {
+    background-image: url("../recursos/prod4.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+  .key5-card {
+    background-image: url("../recursos/prod5.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+  .key6-card {
+    background-image: url("../recursos/prod6.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+  .key7-card {
+    background-image: url("../recursos/prod7.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+  .key8-card {
+    background-image: url("../recursos/prod8.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+  .key9-card {
+    background-image: url("../recursos/prod9.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+  .key10-card {
+    background-image: url("../recursos/prod10.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+  .key11-card {
+    background-image: url("../recursos/prod11.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+  }
+  .key12-card {
+    background-image: url("../recursos/prod12.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
   }
 }
 
@@ -493,9 +499,8 @@ header li {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -517,7 +522,7 @@ header li {
     font-size: small;
     margin: 3px;
   }
-  .contenedor__form div h3 {
+  .contenedor__form div h3, .contenedor__form h3 div h3, .contenedor__form label div h3, .contenedor__form input div h3, .contenedor__form__emojis i div h3, .contenedor__form p div h3 {
     font-size: large;
   }
   .login__box__usuario label {
@@ -541,6 +546,78 @@ header li {
     left: 0;
     color: #9DF4E2;
     font-size: 8px;
+  }
+  .key1-card {
+    background-image: url("../recursos/prod1.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key2-card {
+    background-image: url("../recursos/prod2.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key3-card {
+    background-image: url("../recursos/prod3.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key4-card {
+    background-image: url("../recursos/prod4.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key5-card {
+    background-image: url("../recursos/prod5.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key6-card {
+    background-image: url("../recursos/prod6.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key7-card {
+    background-image: url("../recursos/prod7.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key8-card {
+    background-image: url("../recursos/prod8.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key9-card {
+    background-image: url("../recursos/prod9.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key10-card {
+    background-image: url("../recursos/prod10.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key11-card {
+    background-image: url("../recursos/prod11.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key12-card {
+    background-image: url("../recursos/prod12.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
   }
 }
 
@@ -566,9 +643,8 @@ header li {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -590,7 +666,7 @@ header li {
     font-size: x-small;
     margin: 3px;
   }
-  .contenedor__form div h3 {
+  .contenedor__form div h3, .contenedor__form h3 div h3, .contenedor__form label div h3, .contenedor__form input div h3, .contenedor__form__emojis i div h3, .contenedor__form p div h3 {
     font-size: large;
   }
   .login__box__usuario label {
@@ -614,6 +690,78 @@ header li {
     left: 0;
     color: #9DF4E2;
     font-size: 8px;
+  }
+  .key1-card {
+    background-image: url("../recursos/prod1.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key2-card {
+    background-image: url("../recursos/prod2.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key3-card {
+    background-image: url("../recursos/prod3.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key4-card {
+    background-image: url("../recursos/prod4.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key5-card {
+    background-image: url("../recursos/prod5.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key6-card {
+    background-image: url("../recursos/prod6.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key7-card {
+    background-image: url("../recursos/prod7.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key8-card {
+    background-image: url("../recursos/prod8.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key9-card {
+    background-image: url("../recursos/prod9.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key10-card {
+    background-image: url("../recursos/prod10.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key11-card {
+    background-image: url("../recursos/prod11.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
+  .key12-card {
+    background-image: url("../recursos/prod12.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
   }
 }
 
@@ -639,7 +787,7 @@ body .container-fluid {
   grid-area: main;
 }
 
-body .main {
+body .main, body .main__desc, body .main .redes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -649,8 +797,9 @@ body .main {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -679,27 +828,12 @@ body .main__titular {
 }
 
 body .main__desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: 25px;
   font-family: "Oswald";
   color: whitesmoke;
 }
 
-body .main .contenedormapa {
+body .main .contenedormapa, body .main__desc .contenedormapa, body .main .redes .contenedormapa {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,28 +852,17 @@ body .main .contenedormapa {
   padding: 5px;
 }
 
-body .main .contenedormapa__map {
+body .main .contenedormapa__map, body .main__desc .contenedormapa__map, body .main .redes .contenedormapa__map {
   padding: 5px;
 }
 
-body .main .redes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+body .main .redes, body .main__desc .redes, body .main .redes .redes {
   margin-top: 20px;
   margin-bottom: 5px;
   padding: 5px;
 }
 
-body .main .redes__contenedor {
+body .main .redes__contenedor, body .main__desc .redes__contenedor, body .main .redes .redes__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,20 +870,12 @@ body .main .redes__contenedor {
       flex-wrap: wrap;
 }
 
-body .main .redes__contenedor div {
+body .main .redes__contenedor div, body .main__desc .redes__contenedor div, body .main .redes .redes__contenedor div {
   padding: 2px;
 }
 
-body .main .redes__emoji img {
+body .main .redes__emoji img, body .main__desc .redes__emoji img, body .main .redes .redes__emoji img {
   height: 30px;
   width: 30px;
-}
-
-body .main .redes__emoji:hover {
-  background-color: #9DF4E2;
-  color: #1F2023;
-  border-radius: 12px;
-  -webkit-box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
-          box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
 }
 /*# sourceMappingURL=style.css.map */

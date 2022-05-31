@@ -8,33 +8,21 @@
     margin-top: 15px;
 
     h3{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
+        @extend .contenedor__form;
         font-family: $font-titulos;
         color:$color-font;
         margin-top: 20px;
     }
 
     label{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
+        @extend .contenedor__form;
         font-family: $font-desc;
         color:$color-font;
         padding:2px;
     }
 
     input{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
+        @extend .contenedor__form;
 
         &:hover{
             background-color: $color-principal;
@@ -64,11 +52,7 @@
 
     &__emojis{
         i{
-            display:flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            align-content: center;
-            justify-content: center;
+            @extend .contenedor__form;
             color:$color-font;
             margin-top:5px;
         }
@@ -81,11 +65,7 @@
     }
 
     p{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
+        @extend .contenedor__form;
         color:$color-font;
         margin-top:5px;
     }
@@ -96,15 +76,7 @@
         color:$color-font;
 
         &:hover{
-            background-color: $color-principal;
-            color: $color-fondos;
-            font-family: $font-desc;
-            border-radius: $border-radius;
-            border-color:  $color-principal;
-            box-shadow: 0 0 5px $color-principal,
-                        0 0 25px $color-principal,
-                        0 0 50px $color-principal,
-                        0 0 100px $color-principal;
+            @extend .hover;
         }
     }
 

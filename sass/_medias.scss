@@ -14,7 +14,7 @@
         display:flex;
         flex-wrap: wrap;
         flex-direction: row;
-        align-items: center;
+        align-content: center;
         justify-content: center;
         padding: 0;
         height: 60px;
@@ -65,6 +65,19 @@
             
             }
     }
+
+    $imagenes: (key1: prod1, key2: prod2, key3: prod3, key4: prod4, 
+    key5: prod5, key6: prod6, key7: prod7, key8: prod8, 
+    key9: prod9, key10: prod10, key11: prod11, key12: prod12);
+
+    @each $key, $imagen in $imagenes {
+        .#{$key}-card{
+        background-image: url('../recursos/#{$imagen}.jpg');
+        background-size: cover;
+        height: 150px;
+        width: 150px;
+        }
+    }
     
 }
     
@@ -84,7 +97,7 @@
         display:flex;
         flex-wrap: wrap;
         flex-direction: row;
-        align-items: center;
+        align-content: center;
         justify-content: center;
         padding: 0;
         height: 60px;
@@ -147,6 +160,18 @@
         font-size: 8px;
     }
 
+    $imagenes: (key1: prod1, key2: prod2, key3: prod3, key4: prod4, 
+    key5: prod5, key6: prod6, key7: prod7, key8: prod8, 
+    key9: prod9, key10: prod10, key11: prod11, key12: prod12);
+
+    @each $key, $imagen in $imagenes {
+        .#{$key}-card{
+        background-image: url('../recursos/#{$imagen}.jpg');
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+        }
+    }
     
 }
 
@@ -166,7 +191,7 @@
         display:flex;
         flex-wrap: wrap;
         flex-direction: row;
-        align-items: center;
+        align-content: center;
         justify-content: center;
         padding: 0;
         height: 60px;
@@ -227,6 +252,19 @@
         left: 0;
         color: $color-principal;
         font-size: 8px;
+    }
+
+    $imagenes: (key1: prod1, key2: prod2, key3: prod3, key4: prod4, 
+    key5: prod5, key6: prod6, key7: prod7, key8: prod8, 
+    key9: prod9, key10: prod10, key11: prod11, key12: prod12);
+
+    @each $key, $imagen in $imagenes {
+        .#{$key}-card{
+        background-image: url('../recursos/#{$imagen}.jpg');
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+        }
     }
     
 }

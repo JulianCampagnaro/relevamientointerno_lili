@@ -5,6 +5,7 @@
     align-content: center;
     justify-content: center;
     gap:20px;
+    margin-bottom: 20px;
     
     
     .img {
@@ -13,22 +14,15 @@
         border-radius: $border-radius;
         
         &:hover {
-            background-color: $color-principal;
-            color: $color-fondos;
-            font-family: $font-desc;
-            border-radius: $border-radius;
-            border-color:  $color-principal;
-            box-shadow: 0 0 5px $color-principal,
-                        0 0 25px $color-principal,
-                        0 0 50px $color-principal,
-                        0 0 100px $color-principal;
+            @extend .hover;
         }
     }
 }
 
 
 $imagenes: (key1: prod1, key2: prod2, key3: prod3, key4: prod4, 
-            key5: prod5, key6: prod6, key7: prod7);
+            key5: prod5, key6: prod6, key7: prod7, key8: prod8, 
+            key9: prod9, key10: prod10, key11: prod11, key12: prod12);
 
 @each $key, $imagen in $imagenes {
     .#{$key}-card{
@@ -36,6 +30,5 @@ $imagenes: (key1: prod1, key2: prod2, key3: prod3, key4: prod4,
         background-size: cover;
         height: 200px;
         width: 200px;
-        border: 2px solid yellow;
     }
 }
