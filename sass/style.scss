@@ -46,8 +46,7 @@ body{
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            font-family: $font-titulos;
-            color:$color-font;
+            @include titulos;
             margin-top:10px;
             font-size:xx-large;
         }
@@ -55,8 +54,7 @@ body{
         &__desc{
             @extend .main;
             font-size: $size-desc-main;
-            font-family: $font-desc;
-            color:$color-font;
+            @include titulos;
         }
         
         .contenedormapa{

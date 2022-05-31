@@ -9,8 +9,7 @@
 
     h3{
         @extend .contenedor__form;
-        font-family: $font-titulos;
-        color:$color-font;
+        @include titulos;
         margin-top: 20px;
     }
 

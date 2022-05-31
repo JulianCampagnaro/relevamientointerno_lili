@@ -119,8 +119,8 @@ header li {
 }
 
 .contenedor__form h3, .contenedor__form h3 h3, .contenedor__form label h3, .contenedor__form input h3, .contenedor__form__emojis i h3, .contenedor__form p h3 {
-  font-family: "Anton";
   color: whitesmoke;
+  font-family: "Anton";
   margin-top: 20px;
 }
 
@@ -252,6 +252,11 @@ header li {
           justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
+}
+
+.galeria__titulo {
+  color: whitesmoke;
+  font-family: "Anton";
 }
 
 .galeria .img {
@@ -821,16 +826,16 @@ body .main__titular {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Anton";
   color: whitesmoke;
+  font-family: "Anton";
   margin-top: 10px;
   font-size: xx-large;
 }
 
 body .main__desc {
   font-size: 25px;
-  font-family: "Oswald";
   color: whitesmoke;
+  font-family: "Anton";
 }
 
 body .main .contenedormapa, body .main__desc .contenedormapa, body .main .redes .contenedormapa {

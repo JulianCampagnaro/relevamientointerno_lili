@@ -25,3 +25,9 @@ $border-radius-input:20px;
                     0 0 100px $color-principal;
 }
 
+
+@mixin titulos {
+    color: $color-font;
+    font-family: $font-titulos;
+}
+
