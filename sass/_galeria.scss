@@ -7,7 +7,7 @@
     gap:20px;
     
     
-    img {
+    .img {
         margin-top: 8px;
         vertical-align: middle;
         border-radius: $border-radius;
@@ -23,5 +23,19 @@
                         0 0 50px $color-principal,
                         0 0 100px $color-principal;
         }
+    }
+}
+
+
+$imagenes: (key1: prod1, key2: prod2, key3: prod3, key4: prod4, 
+            key5: prod5, key6: prod6, key7: prod7);
+
+@each $key, $imagen in $imagenes {
+    .#{$key}-card{
+        background-image: url('../recursos/#{$imagen}.jpg');
+        background-size: cover;
+        height: 200px;
+        width: 200px;
+        border: 2px solid yellow;
     }
 }

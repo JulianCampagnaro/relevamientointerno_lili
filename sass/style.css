@@ -337,13 +337,13 @@ header li {
   gap: 20px;
 }
 
-.galeria img {
+.galeria .img {
   margin-top: 8px;
   vertical-align: middle;
   border-radius: 12px;
 }
 
-.galeria img:hover {
+.galeria .img:hover {
   background-color: #9DF4E2;
   color: #1F2023;
   font-family: "Oswald";
@@ -351,6 +351,62 @@ header li {
   border-color: #9DF4E2;
   -webkit-box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
           box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
+}
+
+.key1-card {
+  background-image: url("../recursos/prod1.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border: 2px solid yellow;
+}
+
+.key2-card {
+  background-image: url("../recursos/prod2.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border: 2px solid yellow;
+}
+
+.key3-card {
+  background-image: url("../recursos/prod3.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border: 2px solid yellow;
+}
+
+.key4-card {
+  background-image: url("../recursos/prod4.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border: 2px solid yellow;
+}
+
+.key5-card {
+  background-image: url("../recursos/prod5.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border: 2px solid yellow;
+}
+
+.key6-card {
+  background-image: url("../recursos/prod6.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border: 2px solid yellow;
+}
+
+.key7-card {
+  background-image: url("../recursos/prod7.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border: 2px solid yellow;
 }
 
 @media (min-width: 593px) and (max-width: 720px) {
@@ -706,17 +762,5 @@ body .main .redes__emoji:hover {
   border-radius: 12px;
   -webkit-box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
           box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
-}
-
-.key1-card {
-  background-image: url("../recursos/#($imagen).jpg");
-}
-
-.key2-card {
-  background-image: url("../recursos/#($imagen).jpg");
-}
-
-.key3-card {
-  background-image: url("../recursos/#($imagen).jpg");
 }
 /*# sourceMappingURL=style.css.map */
