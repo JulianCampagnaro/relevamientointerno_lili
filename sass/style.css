@@ -173,12 +173,10 @@ header li {
   color: whitesmoke;
 }
 
-.tamaño_form {
-  width: 120%;
-}
-
 .tamaño_form_rel {
-  width: 80%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .borderform {
@@ -349,7 +347,7 @@ header li {
   width: 200px;
 }
 
-@media (min-width: 593px) and (max-width: 720px) {
+@media (min-width: 593px) and (max-width: 801px) {
   .grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -398,7 +396,7 @@ header li {
     color: whitesmoke;
   }
   .contenedor__form div h3, .contenedor__form h3 div h3, .contenedor__form label div h3, .contenedor__form input div h3, .contenedor__form__emojis i div h3, .contenedor__form p div h3 {
-    font-size: x-large;
+    font-size: xx-large;
   }
   .login__box__usuario label {
     font-family: "Oswald";
@@ -479,6 +477,11 @@ header li {
     background-size: cover;
     height: 150px;
     width: 150px;
+  }
+  .tamaño_form_rel {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 
@@ -624,6 +627,9 @@ header li {
     height: 100px;
     width: 100px;
   }
+  .tamaño_form_rel {
+    width: 80%;
+  }
 }
 
 @media (max-width: 320px) {
@@ -767,6 +773,9 @@ header li {
     background-size: cover;
     height: 100px;
     width: 100px;
+  }
+  .tamaño_form_rel {
+    width: 100%;
   }
 }
 
