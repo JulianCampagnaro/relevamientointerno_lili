@@ -25,13 +25,15 @@
 </head>
 
 
-
+<!-- Arranco el body -->
 <body class="contenedor">
+  <!-- Header -->
   <header>
     <div class="container-fluid encabezado">
       <div class="row encabezado__fila">
         <div class=" col-xs-6 ">
           <nav class="navbar navbar-expand-lg  fixed-top fuente-nav bg-color navflex">
+            <!-- Logo -->
             <div class="container-fluid">
               <a class="navbar-brand nav__img" href="../index.html">
                 <img src="../recursos/lililogo.png" alt="Logo Liliana" class="d-inline-block align-text-top">
@@ -66,7 +68,7 @@
       </div>
     </div>
   </header>
-
+  <!-- Arranco el main -->
   <main class="main__forms container-fluid">
     <div class="col x1-12 col-lg-12 col"></div>
     <section class="container contenedor__form borderform tamaño_form_rel">
@@ -74,7 +76,7 @@
         <h3 class="center-align display-4">Relevamiento</h3>
         <article class="col-xl-12  col-lg-12 col-md-12 col-sm-12 col-12 offset-s2 ">
           <form class="login__box" method="POST" action="formulario-contacto.php  contenedor__form__selec">
-            
+              <!-- CheckBox -->
               <div class="form-check contenedor__check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                 <label class="form-check-label contenedor__check__op" for="flexRadioDefault1">
@@ -105,7 +107,7 @@
                   Problema con pieza/piezas
                 </label>
               </div>  
-
+            <!-- Desplegable uno -->
             <div class="contenedor__drop">
               <select class="form-select" aria-label="Default select example">
                 <option selected>Sector</option>
@@ -115,6 +117,7 @@
                 <option value="4">Armado 4</option>
               </select>
             </div>  
+            <!-- Desplegable dos -->
             <div class="contenedor__drop">
               <select class="form-select" aria-label="Default select example">
                 <option selected>Líder</option>
@@ -130,6 +133,7 @@
                 <option value="10">Líder 10</option>
               </select>
             </div>
+            <!-- Cuadros de ingreso -->
             <section class="contenedor__inputs">
               <div class="input-field contenedor__form__emojis login__box__usuario">
                 <i class="material-icons ">
@@ -146,20 +150,20 @@
                 <label for="nombre">Código de Insumo</label>
               </div>
             </section> 
-
+            <!-- Descripcion -->
             <div class="input-field contenedor__form__emojis login__box__usuario">
               <i class="material-icons prefix ">mode_edit</i>
               <textarea class="col-xl-12  col-12 " name="mensaje" id="" rows="10" class="materialize-textarea"  length="140" required></textarea>
               <label for="mensaje">Descripción</label>
             </div>
-            
+            <!-- Boton -->
             <p class="center-align botón contenedor__form__emojis boton">
               <button class="waves-effect waves-light btn" type="submit">Relevar información</button>
             </p>
       <a/form>
   </main>
 
-
+  <!-- Footer -->
   <footer class="piedepagina">
     <p>Creado por 
     <a href='https://www.linkedin.com/in/juliancampagnaro/' target="_blank"><font color="black"><strong>Julián Campagnaro</strong></font></a></p>
