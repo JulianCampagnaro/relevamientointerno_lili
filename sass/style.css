@@ -1,10 +1,18 @@
 @charset "UTF-8";
-.hover, .piedepagina a:hover, .contenedor__form button:hover, .contenedor__form__emojis i button:hover, .galeria .img:hover, body .main .redes__emoji:hover, body .main__desc .redes__emoji:hover {
+.hover, .piedepagina a:hover, .contenedor__form button:hover, .contenedor__form__emojis i button:hover, body .redes__emoji:hover {
   background-color: #9DF4E2;
   color: #1F2023;
   border-radius: 12px;
   -webkit-box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
           box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
+}
+
+.borde, .galeria .img:hover {
+  color: #1F2023;
+  border: 5px solid #9DF4E2;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 5px #9DF4E2;
+          box-shadow: 0 0 5px #9DF4E2;
 }
 
 header {
@@ -42,14 +50,18 @@ header .color-nav {
   text-decoration: none;
 }
 
-header .active_h a:hover {
+header .nav__menu .active_h a:hover {
   border: 1px solid #9DF4E2;
   border-radius: 12px;
   color: #9DF4E2;
 }
 
-header li {
+header .nav__menu li {
   list-style: none;
+}
+
+header .boton__hamburguesa {
+  background-color: #9DF4E2;
 }
 
 .piedepagina {
@@ -193,6 +205,10 @@ header li {
   border: 2px solid #9DF4E2;
   border-radius: 15px;
   padding: 25px;
+}
+
+.contenedor__check .style {
+  list-style: none;
 }
 
 .contenedor__drop {
@@ -801,7 +817,7 @@ body .container-fluid {
   grid-area: main;
 }
 
-body .main, body .main__desc, body .main .redes {
+body .main, body .main__desc, body .redes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,9 +861,19 @@ body .main__desc {
   font-size: 25px;
   color: whitesmoke;
   font-family: "Anton";
+  margin-top: 20px;
 }
 
-body .main .contenedormapa, body .main__desc .contenedormapa, body .main .redes .contenedormapa {
+body .main__desc .resaltar {
+  border-bottom: 5px solid #9DF4E2;
+  border-radius: 10px;
+}
+
+body .main__desc__excepcion {
+  margin-top: 0px;
+}
+
+body .contenedormapa {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,17 +892,17 @@ body .main .contenedormapa, body .main__desc .contenedormapa, body .main .redes 
   padding: 5px;
 }
 
-body .main .contenedormapa__map, body .main__desc .contenedormapa__map, body .main .redes .contenedormapa__map {
+body .contenedormapa__map {
   padding: 5px;
 }
 
-body .main .redes, body .main__desc .redes, body .main .redes .redes {
+body .redes {
   margin-top: 20px;
   margin-bottom: 5px;
   padding: 5px;
 }
 
-body .main .redes__contenedor, body .main__desc .redes__contenedor, body .main .redes .redes__contenedor {
+body .redes__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -884,11 +910,11 @@ body .main .redes__contenedor, body .main__desc .redes__contenedor, body .main .
       flex-wrap: wrap;
 }
 
-body .main .redes__contenedor div, body .main__desc .redes__contenedor div, body .main .redes .redes__contenedor div {
+body .redes__contenedor div {
   padding: 2px;
 }
 
-body .main .redes__emoji img, body .main__desc .redes__emoji img, body .main .redes .redes__emoji img {
+body .redes__emoji img {
   height: 30px;
   width: 30px;
 }

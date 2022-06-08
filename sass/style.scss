@@ -55,7 +55,20 @@ body{
             @extend .main;
             font-size: $size-desc-main;
             @include titulos;
+            margin-top:20px;
+
+            .resaltar{
+                border-bottom: 5px solid $color-principal;
+                border-radius: 10px;
+            }
+
+            &__excepcion{
+                margin-top:0px;
+            }
+
         }
+    }
+
         
         .contenedormapa{
             display:flex;
@@ -105,5 +118,5 @@ body{
 
     
 
-}
+
 

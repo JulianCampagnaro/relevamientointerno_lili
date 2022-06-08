@@ -47,6 +47,7 @@
         border-color: black; 
         margin-top: 10px;
         border-radius: $border-radius-input; 
+        
     }
 
     &__emojis{
@@ -101,6 +102,10 @@
         border: 2px solid $color-principal;
         border-radius: 15px;
         padding:25px;
+
+        .style{
+        list-style: none;
+        }
     }
 
     &__drop{

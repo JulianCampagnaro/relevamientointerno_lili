@@ -25,6 +25,12 @@ $border-radius-input:20px;
                     0 0 100px $color-principal;
 }
 
+.borde {
+    color: $color-fondos;
+    border: 5px solid $color-principal;
+    border-radius: $border-radius;
+    box-shadow: 0 0 5px $color-principal;
+}
 
 @mixin titulos {
     color: $color-font;
