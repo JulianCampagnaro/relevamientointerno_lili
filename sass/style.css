@@ -62,6 +62,7 @@ header .nav__menu li {
 
 header .boton__hamburguesa {
   background-color: #9DF4E2;
+  color: whitesmoke;
 }
 
 .piedepagina {
@@ -205,6 +206,11 @@ header .boton__hamburguesa {
   border: 2px solid #9DF4E2;
   border-radius: 15px;
   padding: 25px;
+  /* display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between; */
 }
 
 .contenedor__check .style {
