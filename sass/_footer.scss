@@ -11,6 +11,9 @@
     font-family: $font;
 
     a{
+        text-decoration: none;
+        color: $color-font;
+        font-weight: bolder;
         &:hover{
             @extend .hover;
         }

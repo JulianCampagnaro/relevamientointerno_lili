@@ -91,6 +91,12 @@ header .boton__hamburguesa {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.piedepagina a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+
 .piedepagina p {
   color: whitesmoke;
 }
