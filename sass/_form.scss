@@ -102,11 +102,21 @@
         border: 2px solid $color-principal;
         border-radius: 15px;
         padding:25px;
-        /* display:flex;
+        display:flex;
         flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
         align-content: center;
-        justify-content: space-between; */
+        justify-content: space-between;
+        div{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__op{
+            margin-left: 20px;
+        }
         
         
 
