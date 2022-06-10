@@ -620,6 +620,10 @@ header .boton__hamburguesa img {
     z-index: 100;
     border-bottom: 1px solid grey;
   }
+  .boton__hamburguesa span img {
+    width: 20px;
+    height: 20px;
+  }
   .contenedormapa__map {
     display: none;
   }
@@ -761,13 +765,16 @@ header .boton__hamburguesa img {
 }
 
 @media (max-width: 320px) {
-  .grid {
-    -ms-grid-columns: 2.5fr 2.5fr;
-        grid-template-columns: 2.5fr 2.5fr;
-    -ms-grid-rows: 2fr 1.5fr 01.5fr 1.5fr 0.75fr;
-        grid-template-rows: 2fr 1.5fr 01.5fr 1.5fr 0.75fr;
-        grid-template-areas: "header" "main" "main" "main" "redes" "footer";
-  }
+  /*     .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1.5fr 01.5fr 1.5fr 0.75fr; 
+        grid-template-areas: "header"
+                            "main"
+                            "main"
+                            "main"
+                            "redes"
+                            "footer";
+    } */
   header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -797,6 +804,10 @@ header .boton__hamburguesa img {
   .contenedormapa__map {
     display: none;
   }
+  .boton__hamburguesa span img {
+    width: 20px;
+    height: 20px;
+  }
   .main__titular h1 {
     font-size: 18px;
     margin-top: 0px;
@@ -806,6 +817,20 @@ header .boton__hamburguesa img {
   }
   .figure img {
     padding: 0px;
+  }
+  .galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .main__desc p {
     margin-top: 0px;
@@ -856,74 +881,74 @@ header .boton__hamburguesa img {
   .key1-card {
     background-image: url("../recursos/prod1.jpg");
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .key2-card {
     background-image: url("../recursos/prod2.jpg");
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .key3-card {
     background-image: url("../recursos/prod3.jpg");
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .key4-card {
     background-image: url("../recursos/prod4.jpg");
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .key5-card {
     background-image: url("../recursos/prod5.jpg");
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .key6-card {
     background-image: url("../recursos/prod6.jpg");
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .key7-card {
     background-image: url("../recursos/prod7.jpg");
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .key8-card {
     background-image: url("../recursos/prod8.jpg");
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .key9-card {
     background-image: url("../recursos/prod9.jpg");
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .key10-card {
     background-image: url("../recursos/prod10.jpg");
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .key11-card {
     background-image: url("../recursos/prod11.jpg");
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .key12-card {
     background-image: url("../recursos/prod12.jpg");
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .tamaño_form_rel {
     width: 100%;
@@ -939,8 +964,6 @@ header .boton__hamburguesa img {
 /* --------------- */
 /* --------------- */
 body {
-  display: -ms-grid;
-  display: grid;
       grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
   background-color: #1F2023;
 }
