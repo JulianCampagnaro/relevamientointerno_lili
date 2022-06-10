@@ -217,16 +217,22 @@ header .boton__hamburguesa img {
 .contenedor__check {
   border: 2px solid #9DF4E2;
   border-radius: 15px;
-  padding: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  margin-right: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: justify;
@@ -251,7 +257,7 @@ header .boton__hamburguesa img {
 }
 
 .contenedor__check__op {
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .contenedor__check .style {
@@ -603,6 +609,31 @@ header .boton__hamburguesa img {
     padding: 8px;
     -webkit-transition: .5s;
     transition: .5s;
+  }
+  .contenedor__check {
+    border: 2px solid #9DF4E2;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-right: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .login__box .login__box__usuario input:focus ~ label,
   .login__box .login__box__usuario input:valid ~ label {

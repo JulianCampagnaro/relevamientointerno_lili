@@ -150,6 +150,24 @@
             
             }
     }
+
+    .contenedor{
+    
+        &__check{
+            border: 2px solid $color-principal;
+            border-radius: 15px;
+            padding-left: 30px;
+            padding-right:30px;
+            padding-bottom: 20px;
+            margin-right: 0;
+            width:fit-content;
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-between;
+        }
+    }
     
     .login__box .login__box__usuario input:focus ~ label,
     .login__box .login__box__usuario input:valid ~ label  {    

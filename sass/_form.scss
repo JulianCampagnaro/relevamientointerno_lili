@@ -98,13 +98,18 @@
 }
 
 .contenedor{
+    
     &__check{
         border: 2px solid $color-principal;
         border-radius: 15px;
-        padding:25px;
+        padding-left: 30px;
+        padding-right:30px;
+        padding-bottom: 20px;
+        margin-right: 0;
+        width:fit-content;
         display:flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         align-content: center;
         justify-content: space-between;
         
@@ -116,7 +121,7 @@
         }
 
         &__op{
-            margin-left: 20px;
+            margin-left: 5px;
         }
         
         
