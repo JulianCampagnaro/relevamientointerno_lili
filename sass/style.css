@@ -624,11 +624,11 @@ header .boton__hamburguesa img {
     display: none;
   }
   .main__titular h1 {
-    font-size: xx-large;
+    font-size: x-large;
     margin: 3px;
   }
   .main__desc p {
-    font-size: large;
+    font-size: small;
     margin: 3px;
   }
   .contenedor__form div h3, .contenedor__form h3 div h3, .contenedor__form label div h3, .contenedor__form input div h3, .contenedor__form__emojis i div h3, .contenedor__form p div h3 {
@@ -802,7 +802,7 @@ header .boton__hamburguesa img {
     margin: 3px;
   }
   .main__desc p {
-    font-size: x-small;
+    font-size: small;
     margin: 3px;
   }
   .contenedor__form div h3, .contenedor__form h3 div h3, .contenedor__form label div h3, .contenedor__form input div h3, .contenedor__form__emojis i div h3, .contenedor__form p div h3 {
