@@ -251,12 +251,19 @@
 
     .main__titular h1{
         font-size:18px;
-        margin-top:5px;
+        margin-top:0px;
 
     }
-
+    .figure{
+        padding:0px;
+        img{
+            padding:0px;
+        }
+    }
     .main__desc p{
+        margin-top:0px;
         font-size:11px;
+        padding: 0px;
     }
     .encabezados__fila{
             display:flex;

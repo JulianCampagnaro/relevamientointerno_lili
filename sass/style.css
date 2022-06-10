@@ -799,10 +799,18 @@ header .boton__hamburguesa img {
   }
   .main__titular h1 {
     font-size: 18px;
-    margin-top: 5px;
+    margin-top: 0px;
+  }
+  .figure {
+    padding: 0px;
+  }
+  .figure img {
+    padding: 0px;
   }
   .main__desc p {
+    margin-top: 0px;
     font-size: 11px;
+    padding: 0px;
   }
   .encabezados__fila {
     display: -webkit-box;
@@ -998,6 +1006,10 @@ body .main__desc .resaltar {
 
 body .main__desc__excepcion {
   margin-top: 0px;
+}
+
+body .main .figure img, body .main__desc .figure img, body .redes .figure img {
+  padding: 12px;
 }
 
 body .contenedormapa {
