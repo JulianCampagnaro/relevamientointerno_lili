@@ -220,13 +220,14 @@
 
 @media  (max-width: 320px) {
     .grid{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1.5fr 0.75fr 0.75fr 0.75fr; 
-        grid-template-areas: "header "
-                            "main "
+        grid-template-columns: 2.5fr 2.5fr;
+        grid-template-rows: 2fr 1.5fr 01.5fr 1.5fr 0.75fr; 
+        grid-template-areas: "header"
                             "main"
-                            "redes "
-                            "footer ";
+                            "main"
+                            "main"
+                            "redes"
+                            "footer";
     }
 
     header{
@@ -249,15 +250,21 @@
     }
 
     .main__titular h1{
-        font-size:large;
-        margin:3px;
+        font-size:18px;
+        margin-top:5px;
+
     }
 
     .main__desc p{
-        font-size:small;
-        margin:3px;
+        font-size:11px;
     }
-
+    .encabezados__fila{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+    }
     .contenedor__form{
         div {
             h3{

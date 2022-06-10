@@ -762,11 +762,11 @@ header .boton__hamburguesa img {
 
 @media (max-width: 320px) {
   .grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1.5fr 0.75fr 0.75fr 0.75fr;
-        grid-template-rows: 1.5fr 0.75fr 0.75fr 0.75fr;
-        grid-template-areas: "header " "main " "main" "redes " "footer ";
+    -ms-grid-columns: 2.5fr 2.5fr;
+        grid-template-columns: 2.5fr 2.5fr;
+    -ms-grid-rows: 2fr 1.5fr 01.5fr 1.5fr 0.75fr;
+        grid-template-rows: 2fr 1.5fr 01.5fr 1.5fr 0.75fr;
+        grid-template-areas: "header" "main" "main" "main" "redes" "footer";
   }
   header {
     -ms-grid-row: 1;
@@ -798,12 +798,27 @@ header .boton__hamburguesa img {
     display: none;
   }
   .main__titular h1 {
-    font-size: large;
-    margin: 3px;
+    font-size: 18px;
+    margin-top: 5px;
   }
   .main__desc p {
-    font-size: small;
-    margin: 3px;
+    font-size: 11px;
+  }
+  .encabezados__fila {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .contenedor__form div h3, .contenedor__form h3 div h3, .contenedor__form label div h3, .contenedor__form input div h3, .contenedor__form__emojis i div h3, .contenedor__form p div h3 {
     font-size: large;
