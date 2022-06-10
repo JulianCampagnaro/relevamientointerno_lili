@@ -467,6 +467,19 @@ header .boton__hamburguesa img {
   .contenedor__form div h3, .contenedor__form h3 div h3, .contenedor__form label div h3, .contenedor__form input div h3, .contenedor__form__emojis i div h3, .contenedor__form p div h3 {
     font-size: xx-large;
   }
+  .login__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
   .login__box__usuario label {
     font-family: "Oswald";
     font-size: small;
@@ -552,6 +565,25 @@ header .boton__hamburguesa img {
     width: -moz-max-content;
     width: max-content;
   }
+  .contenedor__check {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 593px) {
@@ -592,31 +624,38 @@ header .boton__hamburguesa img {
     display: none;
   }
   .main__titular h1 {
-    font-size: x-large;
+    font-size: xx-large;
     margin: 3px;
   }
   .main__desc p {
-    font-size: small;
+    font-size: large;
     margin: 3px;
   }
   .contenedor__form div h3, .contenedor__form h3 div h3, .contenedor__form label div h3, .contenedor__form input div h3, .contenedor__form__emojis i div h3, .contenedor__form p div h3 {
-    font-size: large;
+    font-size: x-large;
+  }
+  .login__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .login__box__usuario label {
     font-family: "Oswald";
-    font-size: x-small;
+    font-size: xx-small;
     color: whitesmoke;
     padding: 8px;
     -webkit-transition: .5s;
     transition: .5s;
   }
   .contenedor__check {
-    border: 2px solid #9DF4E2;
-    border-radius: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    margin-right: 0;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -629,11 +668,6 @@ header .boton__hamburguesa img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .login__box .login__box__usuario input:focus ~ label,
   .login__box .login__box__usuario input:valid ~ label {

@@ -52,7 +52,10 @@
     } 
 
     .login__box{
-
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
         &__usuario{
             label{
                 font-family: $font-desc;
@@ -85,7 +88,18 @@
             width:max-content;
         }
     }
+    .contenedor{
     
+        &__check{
+            
+            width:fit-content;
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-between;
+        }
+    }
 }
     
 @media  (min-width: 320px) and (max-width:593px) {
@@ -119,29 +133,32 @@
     }
 
     .main__titular h1{
-        font-size:x-large;
+        font-size:xx-large;
         margin:3px;
     }
 
     .main__desc p{
-        font-size:small;
+        font-size:large;
         margin:3px;
     }
 
     .contenedor__form{
         div {
             h3{
-                font-size: large;
+                font-size: x-large;
             }
         }
     } 
 
     .login__box{
-
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
         &__usuario{
             label{
                 font-family: $font-desc;
-                font-size: x-small;
+                font-size:xx-small;
                 color:$color-font;  
                 padding:8px;
                 transition: .5s;
@@ -154,18 +171,11 @@
     .contenedor{
     
         &__check{
-            border: 2px solid $color-principal;
-            border-radius: 15px;
-            padding-left: 30px;
-            padding-right:30px;
-            padding-bottom: 20px;
-            margin-right: 0;
+            
             width:fit-content;
             display:flex;
             flex-wrap: wrap;
             flex-direction: column;
-            align-content: center;
-            justify-content: space-between;
         }
     }
     
