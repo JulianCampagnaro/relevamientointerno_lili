@@ -38,8 +38,14 @@ header{
     }
 
     .boton__hamburguesa{
-        background-color: $color-principal;
+        /* background-color: $color-principal; */
         color:$color-font;
+        border-color: $color-fondos;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+
         
     }
 

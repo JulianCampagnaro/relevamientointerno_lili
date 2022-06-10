@@ -61,8 +61,14 @@ header .nav__menu li {
 }
 
 header .boton__hamburguesa {
-  background-color: #9DF4E2;
+  /* background-color: $color-principal; */
   color: whitesmoke;
+  border-color: #1F2023;
+}
+
+header .boton__hamburguesa img {
+  width: 30px;
+  height: 30px;
 }
 
 .piedepagina {
