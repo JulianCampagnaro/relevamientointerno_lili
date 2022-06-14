@@ -7,7 +7,7 @@
           box-shadow: 0 0 5px #9DF4E2, 0 0 25px #9DF4E2, 0 0 50px #9DF4E2, 0 0 100px #9DF4E2;
 }
 
-.borde, .galeria .img:hover {
+.borde, .full-container .galeria .img:hover {
   color: #1F2023;
   border: 5px solid #9DF4E2;
   border-radius: 12px;
@@ -306,7 +306,68 @@ header .boton__hamburguesa img {
     padding:10px;
     transition: .5s;
     } */
-.galeria {
+.full-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.full-container .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*   flex-wrap: wrap;
+        flex-direction: row; */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  /*direction wrap*/
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.full-container .container .tarjeta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.full-container .container .tarjeta a {
+  font-family: "Oswald";
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.full-container .container .tarjeta a:hover {
+  color: #9DF4E2;
+  border-bottom: 1px solid #9DF4E2;
+  font-size: smaller;
+}
+
+.full-container .galeria {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,15 +382,28 @@ header .boton__hamburguesa img {
   margin-bottom: 20px;
 }
 
-.galeria__titulo {
+.full-container .galeria__titulo {
   color: whitesmoke;
   font-family: "Anton";
 }
 
-.galeria .img {
+.full-container .galeria .img {
+  border-radius: 15px;
+  margin-bottom: 15px;
+  -webkit-transition: -webkit-transform 1s, -webkit-box-shadow 2s;
+  transition: -webkit-transform 1s, -webkit-box-shadow 2s;
+  transition: transform 1s, box-shadow 2s;
+  transition: transform 1s, box-shadow 2s, -webkit-transform 1s, -webkit-box-shadow 2s;
   margin-top: 8px;
   vertical-align: middle;
   border-radius: 12px;
+}
+
+.full-container .galeria .img:hover {
+  -webkit-box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.2) rotate(20deg);
+          transform: scale(1.2) rotate(20deg);
 }
 
 .key1-card {
